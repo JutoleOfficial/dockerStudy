@@ -1,0 +1,31 @@
+services:
+  fc:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9100:9123"
+    volumes:
+      - /home/sellmate/Projects/d0720/app:/app 
+
+  sc:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9101:9123"
+    environment:
+      - MY_NAME=foo
+    volumes:
+      - /home/sellmate/Projects/d0720/app:/app 
+
+  tc:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9102:9123"
+    environment:
+      - MY_NAME=bar
+    volumes:
+      - /home/sellmate/Projects/d0720/app:/app 

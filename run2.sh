@@ -1,0 +1,1 @@
+docker run --rm -p 9102:9123 --name tc --network my-net -e MY_NAME=bar image1

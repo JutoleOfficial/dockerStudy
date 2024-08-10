@@ -1,0 +1,1 @@
+docker run --rm -p 9100:9123 -v /home/sellmate/Projects/d0720/app:/app --name fc --network my-net image1

@@ -1,0 +1,1 @@
+docker run --rm -p 9101:9123 --name sc --network my-net -e MY_NAME=foo image1
